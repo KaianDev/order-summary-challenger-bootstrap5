@@ -111,6 +111,10 @@ body {
 }
 
 @media (max-width: 575.98px) {
+    body {
+        background: url(../images/pattern-background-mobile.svg) repeat-x top center cover;
+    }
+    
     .row {
         padding: .8em;
     }

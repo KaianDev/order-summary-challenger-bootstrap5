@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue:  hsl(223, 47%, 23%);
+    --shadow: hsla(0, 0%, 0%, 0.094)
+}
+
+body {
+    height: 100vh;
+    background: url(../images/pattern-background-desktop.svg) repeat-x top center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+}
+
+.container, .row {
+    height: inherit;
+}
+
+.card {
+    max-width: 400px;
+    border-radius: 1em;
+    border: 0;
+    box-shadow: 0px 15px 10px 5px var(--shadow);
+    margin-top: -50px;
+}
+
+.card-body {
+    padding: 2.5em;
+    border-radius: 1em;
+}
+
+.card-img-top {
+    border-radius: 1em 1em 0 0;
+}
+
+
+.card h5.card-title {
+    font-weight: 900;
+    padding-bottom: 10px;
+    color: var(--dark-blue);
+    margin-bottom: .5em;
+}
+
+.card p {
+    color: var(--desaturated-blue);
+    padding-bottom: 10px;
+}
+
+.card .card-body .plan {
+    background: var(--very-pale-blue);
+    padding: 1.5em;
+    border-radius: 1em;
+    gap: 1.5em;
+    color: var(--desaturated-blue);
+}
+
+.card .card-body .plan .plan-annual {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.card .card-body .plan .change {
+    flex: 1;
+    text-decoration: none;
+    text-align: right;
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+.card .card-body .plan .change:hover {
+    opacity: .8;
+    text-decoration: underline;
+}
+
+.card .card-body a.btn.btn-custom {
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    border-radius: .7em;
+    padding: 8px;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    box-shadow: 0px 15px 10px 2px var(--shadow);
+}
+
+.card .card-body a.btn.btn-custom:hover {
+    opacity: .8;
+}
+
+.card .card-body a.cancel {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    
+}
+
+.card .card-body a.cancel:hover {
+    color: var(--dark-blue);
+}
+
+.transition {
+    transition: all .3s ease;
+}
+
+.attribution {
+    margin-top: -40px;
+}
+
+@media (max-width: 575.98px) {
+    .row {
+        padding: .8em;
+    }
+
+    .card-body {
+        padding: 2em 1.8em;
+    }
+}
